@@ -93,9 +93,9 @@ rm -rf terraform.tfstate*
 ## Step-08: Conclusion
 - Re-iterate what we have learned in this section
 - Learned about Important Terraform Commands
-1. terraform init
-2. terraform validate
-3. terraform plan
+1. terraform init        //Used to download the respestive provider binaries to the local. 
+2. terraform validate    //If syntax is okay then its displays success.
+3. terraform plan        //
 4. terraform apply
 5. terraform destroy      
  
