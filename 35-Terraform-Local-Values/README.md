@@ -2,7 +2,7 @@
 title: Terraform Local Values
 description: Learn about Terraform Local Values
 ---
-## Step-01: Introduction
+## Introduction
 - Understand DRY Principle
 - What is local value in terraform?
 - When To Use Local Values?
