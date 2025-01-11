@@ -2,7 +2,7 @@
 title: Terraform Local Values
 description: Learn about Terraform Local Values
 ---
-## Step-01: Introduction
+## Introduction
 - Understand DRY Principle
 - What is local value in terraform?
 - When To Use Local Values?
@@ -29,7 +29,7 @@ Another use case (at least for me) for locals is to shorten references on upstre
 We can define as many local blocks as required in that respective Module.  The names given for the items in the local block must be unique throughout a module.
 ```
 
-## Step-02: c1-versions.tf
+## c1-versions.tf
 ```t
 # Terraform Block
 terraform {
@@ -47,7 +47,7 @@ provider "azurerm" {
 }
 ```
 
-## Step-03: c2-variables.tf
+## c2-variables.tf
 ```t
 # Input Variables
 
@@ -83,7 +83,7 @@ variable "virtual_network_name" {
 }
 ```
 
-## Step-04: c3-local-values.tf
+## c3-local-values.tf
 ```t
 # Local Values Block
 
@@ -106,7 +106,7 @@ locals {
 }
 ```
 
-## Step-05: c4-resource-group.tf
+## c4-resource-group.tf
 ```t
 # Resource-1: Azure Resource Group
 resource "azurerm_resource_group" "myrg" {
@@ -117,7 +117,7 @@ resource "azurerm_resource_group" "myrg" {
 }
 ```
 
-## Step-06: c5-virtual-network.tf
+## c5-virtual-network.tf
 ```t
 # Create Virtual Network
 resource "azurerm_virtual_network" "myvnet" {
@@ -131,7 +131,7 @@ resource "azurerm_virtual_network" "myvnet" {
 
 ```
 
-## Step-07: Execute Terraform Commands
+## Execute Terraform Commands
 ```t
 # Initialize Terraform
 terraform init
@@ -158,7 +158,7 @@ Observation: Review the below directly in Azure Management Console
 
 ```
 
-## Step-08: Clean-Up
+## Clean-Up
 ```t
 # Destroy Resources
 terraform destroy -auto-approve
